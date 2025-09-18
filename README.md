@@ -11,7 +11,7 @@ This project implements and compares different object detection models (Custom C
 - `requirements.txt` - Dependencies
 - `predict_commands.txt` - Sample commands for prediction
 - `README.md` - Project documentation
-- `technical_report.pdf` - Final report with methods, experiments, and results
+- `report.pdf` - Final report with methods, experiments, and results
 
 ## Installation
 
