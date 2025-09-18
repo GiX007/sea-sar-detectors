@@ -1,0 +1,23 @@
+<component name="ProjectDictionaryState">
+  <dictionary name="project">
+    <words>
+      <w>batchnorm</w>
+      <w>dets</w>
+      <w>fasterrcnn</w>
+      <w>giou</w>
+      <w>imgid</w>
+      <w>imgsz</w>
+      <w>ious</w>
+      <w>iscrowd</w>
+      <w>leakyrelu</w>
+      <w>mtime</w>
+      <w>noobj</w>
+      <w>pred</w>
+      <w>rcnn</w>
+      <w>retinanet</w>
+      <w>vram</w>
+      <w>xywh</w>
+      <w>yolov</w>
+    </words>
+  </dictionary>
+</component>

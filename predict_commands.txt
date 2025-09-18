@@ -1,0 +1,113 @@
+# Faster R-CNN (MobileNetV3-Large-FPN)
+
+python -m src.predict_single `
+  --model_type fasterrcnn `
+  --model_path results/models/fasterrcnn.pth `
+  --image_path data/test_images/209.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.6
+
+python -m src.predict_single `
+  --model_type fasterrcnn `
+  --model_path results/models/fasterrcnn.pth `
+  --image_path data/test_images/505.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.3
+
+python -m src.predict_single `
+  --model_type fasterrcnn `
+  --model_path results/models/fasterrcnn.pth `
+  --image_path data/test_images/1475.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.6
+
+python -m src.predict_single `
+  --model_type fasterrcnn `
+  --model_path results/models/fasterrcnn.pth `
+  --image_path data/test_images/4385.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.1
+
+python -m src.predict_single `
+  --model_type fasterrcnn `
+  --model_path results/models/fasterrcnn.pth `
+  --image_path data/test_images/15539.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.4
+
+
+# RetinaNet
+
+python -m src.predict_single `
+  --model_type retinanet `
+  --model_path results/models/retinanet.pth `
+  --image_path data/test_images/209.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.4
+
+python -m src.predict_single `
+  --model_type retinanet `
+  --model_path results/models/retinanet.pth `
+  --image_path data/test_images/505.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.4
+
+python -m src.predict_single `
+  --model_type retinanet `
+  --model_path results/models/retinanet.pth `
+  --image_path data/test_images/1475.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.6
+
+python -m src.predict_single `
+  --model_type retinanet `
+  --model_path results/models/retinanet.pth `
+  --image_path data/test_images/4385.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.5
+
+python -m src.predict_single `
+  --model_type retinanet `
+  --model_path results/models/retinanet.pth `
+  --image_path data/test_images/15539.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.4
+
+
+# YOLOv8
+
+python -m src.predict_single `
+  --model_type yolov8 `
+  --model_path results/models/yolov8_best.pt `
+  --image_path data/test_images/209.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.4
+
+python -m src.predict_single `
+  --model_type yolov8 `
+  --model_path results/models/yolov8_best.pt `
+  --image_path data/test_images/505.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.3
+
+python -m src.predict_single `
+  --model_type yolov8 `
+  --model_path results/models/yolov8_best.pt `
+  --image_path data/test_images/1475.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.6
+
+python -m src.predict_single `
+  --model_type yolov8 `
+  --model_path results/models/yolov8_best.pt `
+  --image_path data/test_images/4385.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.1
+
+python -m src.predict_single `
+  --model_type yolov8 `
+  --model_path results/models/yolov8_best.pt `
+  --image_path data/test_images/15539.jpg `
+  --class_map results/models/class_map.json `
+  --score_thr 0.3
+
