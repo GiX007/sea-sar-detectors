@@ -85,31 +85,31 @@ Predictions are printed in the terminal, and annotated images are saved to `resu
 
 ```
 # Faster R-CNN
-python -m src.predict_single \
-  --model_type fasterrcnn \
-  --model_path results/models/fasterrcnn.pth \
-  --image_path data/test_images/209.jpg \
-  --class_map results/models/class_map.json \
+python -m src.predict_single `
+  --model_type fasterrcnn `
+  --model_path results/models/fasterrcnn.pth `
+  --image_path data/test_images/209.jpg `
+  --class_map results/models/class_map.json `
   --score_thr 0.6
 ```
 
 ```
 # RetinaNet
-python -m src.predict_single \
-  --model_type retinanet \
-  --model_path results/models/retinanet.pth \
-  --image_path data/test_images/209.jpg \
-  --class_map results/models/class_map.json \
+python -m src.predict_single `
+  --model_type retinanet `
+  --model_path results/models/retinanet.pth `
+  --image_path data/test_images/209.jpg `
+  --class_map results/models/class_map.json `
   --score_thr 0.6
 ```
 
 ```
 # YOLOv8
-python -m src.predict_single \
-  --model_type yolov8 \
-  --model_path results/models/yolov8.pt \
-  --image_path data/test_images/209.jpg \
-  --class_map results/models/class_map.json \
+python -m src.predict_single `
+  --model_type yolov8 `
+  --model_path results/models/yolov8.pt `
+  --image_path data/test_images/209.jpg `
+  --class_map results/models/class_map.json `
   --score_thr 0.6
 ```
 
