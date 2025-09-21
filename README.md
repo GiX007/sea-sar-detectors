@@ -6,7 +6,7 @@ This project implements and compares different object detection models (Custom C
 
 - `src/` - Core Python code (preprocessing, models, trainers, evaluation, single prediction)
 - `main.py` - Main script to run the full pipeline
-- `data` - Raw data, processed COCO-format splits, tiles
+- `data` - Raw data, processed COCO-format splits (~16.2 GB, not included here)
 - `results` - Saved metrics, logs, figures and predictions
 - `requirements.txt` - Dependencies
 - `predict_commands.txt` - Sample commands for prediction
@@ -75,7 +75,8 @@ All experiments were run with PyTorch 2.5.1+cu121 on a single NVIDIA GeForce GTX
 - The dataset used is **SeaDronesSee Object Detection v2 (Compressed)** (≈9 GB, JPEG images).  
 - The official test set annotations are withheld by the dataset provider, so we perform a local train/validation split and report results only on the accessible validation data.  
 - All models are compared using consistent preprocessing and standard hyperparameters (no additional tuning).  
-- Reported results may vary depending on hardware, random seed, and exact configuration.  
+- Reported results may vary depending on hardware, random seed, and exact configuration.
+- The `data/` directory (raw data, COCO-format splits, and tiles) is quite large (≈16.2 GB) and is not included in this repository. If needed, especially the **resplit version**, I can provide it directly upon request.
 
 ## Prediction Example
 
