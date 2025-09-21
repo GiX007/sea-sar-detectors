@@ -1,0 +1,236 @@
+=== Training Session ===
+Start time: 2025-09-18 00:22:54
+PyTorch: 2.5.1+cu121
+Device: cuda
+CUDA: available | GPU=NVIDIA GeForce GTX 1050 Ti with Max-Q Design | capability=6.1 | VRAM=4.0 GB
+cuDNN: 90100
+
+>>> Training of YOLOv1 ...
+Epochs: 100 | LR: 0.001
+EarlyStopping: patience=10, min_delta=0.0001
+
+Epoch: 1 | Train Loss: 15.372602  Val Loss: 27.275640 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 2 | Train Loss: 9.553292  Val Loss: 7.671891 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 3 | Train Loss: 7.543371  Val Loss: 9.248091 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 4 | Train Loss: 8.029662  Val Loss: 12.042416 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 5 | Train Loss: 7.539953  Val Loss: 11.725239 | Train IoU: nan  Val IoU: 0.004828
+Epoch: 6 | Train Loss: 6.251194  Val Loss: 16.188519 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 7 | Train Loss: 5.838660  Val Loss: 8.681304 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 8 | Train Loss: 5.667868  Val Loss: 5.338596 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 9 | Train Loss: 5.516920  Val Loss: 5.527776 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 10 | Train Loss: 5.347488  Val Loss: 5.207727 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 11 | Train Loss: 5.194859  Val Loss: 5.747726 | Train IoU: nan  Val IoU: 0.004403
+Epoch: 12 | Train Loss: 5.547576  Val Loss: 5.307836 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 13 | Train Loss: 6.071009  Val Loss: 6.038390 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 14 | Train Loss: 5.450447  Val Loss: 7.470465 | Train IoU: nan  Val IoU: 0.005115
+Epoch: 15 | Train Loss: 5.145881  Val Loss: 7.511197 | Train IoU: nan  Val IoU: 0.004413
+Epoch: 16 | Train Loss: 4.937172  Val Loss: 5.044853 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 17 | Train Loss: 4.879886  Val Loss: 5.276610 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 18 | Train Loss: 4.835919  Val Loss: 5.679087 | Train IoU: nan  Val IoU: 0.005201
+Epoch: 19 | Train Loss: 4.882832  Val Loss: 5.426880 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 20 | Train Loss: 4.747668  Val Loss: 4.851890 | Train IoU: nan  Val IoU: 0.005466
+Epoch: 21 | Train Loss: 4.774842  Val Loss: 5.047405 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 22 | Train Loss: 4.782089  Val Loss: 4.941520 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 23 | Train Loss: 4.744224  Val Loss: 5.295612 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 24 | Train Loss: 4.725198  Val Loss: 4.625106 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 25 | Train Loss: 4.831794  Val Loss: 6.706278 | Train IoU: nan  Val IoU: 0.004420
+Epoch: 26 | Train Loss: 4.883770  Val Loss: 4.809156 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 27 | Train Loss: 4.728360  Val Loss: 4.731140 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 28 | Train Loss: 4.620396  Val Loss: 4.703265 | Train IoU: nan  Val IoU: 0.004786
+Epoch: 29 | Train Loss: 4.625625  Val Loss: 4.478893 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 30 | Train Loss: 4.715787  Val Loss: 5.766284 | Train IoU: nan  Val IoU: 0.000000
+Early stopping at epoch 30 (best val_iou at 20: 0.005466)
+
+TEST IoU@0.5=0.0023 Prec@0.5=0.0004 Rec@0.5=0.0011
+Training finished in 1281.49 seconds | Trainable parameters: 24,734,367
+
+>>> Training of Faster R-CNN ...
+Epochs: 100 | LR: 0.005 | Momentum: 0.9 | Weight Decay: 0.0005
+EarlyStopping: patience=10, min_delta=0.0001
+
+Epoch: 1 | Train Loss: 0.509106  Val Loss: 0.442116 | Train IoU: nan  Val IoU: 0.612738
+Epoch: 2 | Train Loss: 0.418710  Val Loss: 0.417318 | Train IoU: nan  Val IoU: 0.608281
+Epoch: 3 | Train Loss: 0.402969  Val Loss: 0.410244 | Train IoU: nan  Val IoU: 0.621039
+Epoch: 4 | Train Loss: 0.391950  Val Loss: 0.400442 | Train IoU: nan  Val IoU: 0.617463
+Epoch: 5 | Train Loss: 0.387296  Val Loss: 0.424641 | Train IoU: nan  Val IoU: 0.607391
+Epoch: 6 | Train Loss: 0.384051  Val Loss: 0.387676 | Train IoU: nan  Val IoU: 0.608976
+Epoch: 7 | Train Loss: 0.382571  Val Loss: 0.383261 | Train IoU: nan  Val IoU: 0.623104
+Epoch: 8 | Train Loss: 0.377992  Val Loss: 0.369052 | Train IoU: nan  Val IoU: 0.636638
+Epoch: 9 | Train Loss: 0.375634  Val Loss: 0.395122 | Train IoU: nan  Val IoU: 0.631707
+Epoch: 10 | Train Loss: 0.368928  Val Loss: 0.400056 | Train IoU: nan  Val IoU: 0.640671
+Epoch: 11 | Train Loss: 0.362896  Val Loss: 0.421160 | Train IoU: nan  Val IoU: 0.611541
+Epoch: 12 | Train Loss: 0.369318  Val Loss: 0.437357 | Train IoU: nan  Val IoU: 0.625389
+Epoch: 13 | Train Loss: 0.365828  Val Loss: 0.401301 | Train IoU: nan  Val IoU: 0.642126
+Epoch: 14 | Train Loss: 0.370492  Val Loss: 0.392255 | Train IoU: nan  Val IoU: 0.645286
+Epoch: 15 | Train Loss: 0.354335  Val Loss: 0.435946 | Train IoU: nan  Val IoU: 0.636655
+Epoch: 16 | Train Loss: 0.361549  Val Loss: 0.449321 | Train IoU: nan  Val IoU: 0.641260
+Epoch: 17 | Train Loss: 0.361234  Val Loss: 0.443606 | Train IoU: nan  Val IoU: 0.634334
+Epoch: 18 | Train Loss: 0.359002  Val Loss: 0.418804 | Train IoU: nan  Val IoU: 0.635596
+Epoch: 19 | Train Loss: 0.350721  Val Loss: 0.418506 | Train IoU: nan  Val IoU: 0.650000
+Epoch: 20 | Train Loss: 0.356767  Val Loss: 0.438389 | Train IoU: nan  Val IoU: 0.628250
+Epoch: 21 | Train Loss: 0.360198  Val Loss: 0.444496 | Train IoU: nan  Val IoU: 0.637621
+Epoch: 22 | Train Loss: 0.354467  Val Loss: 0.415121 | Train IoU: nan  Val IoU: 0.620327
+Epoch: 23 | Train Loss: 0.348591  Val Loss: 0.414899 | Train IoU: nan  Val IoU: 0.607599
+Epoch: 24 | Train Loss: 0.350980  Val Loss: 0.433517 | Train IoU: nan  Val IoU: 0.645195
+Epoch: 25 | Train Loss: 0.351378  Val Loss: 0.396825 | Train IoU: nan  Val IoU: 0.628087
+Epoch: 26 | Train Loss: 0.347726  Val Loss: 0.426422 | Train IoU: nan  Val IoU: 0.624652
+Epoch: 27 | Train Loss: 0.340596  Val Loss: 0.412896 | Train IoU: nan  Val IoU: 0.641891
+Epoch: 28 | Train Loss: 0.350821  Val Loss: 0.430318 | Train IoU: nan  Val IoU: 0.640364
+Epoch: 29 | Train Loss: 0.346247  Val Loss: 0.465137 | Train IoU: nan  Val IoU: 0.625220
+Early stopping triggered at epoch 29 (best val_iou at epoch 19: 0.650000)
+
+TEST IoU@0.5=0.6160 Prec@0.5=0.2467 Rec@0.5=0.5431
+Training finished in 2550.36 seconds | Trainable parameters: 16,003,177
+
+>>> Training of RetinaNet ...
+Epochs: 100 | LR: 0.005 | Momentum: 0.9 | Weight Decay: 0.0005
+EarlyStopping: patience=10, min_delta=0.0001
+
+Epoch: 1 | Train Loss: 2.171825  Val Loss: 1.900299 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 2 | Train Loss: 1.849749  Val Loss: 1.872871 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 3 | Train Loss: 1.735778  Val Loss: 1.653263 | Train IoU: nan  Val IoU: 0.000000
+Epoch: 4 | Train Loss: 1.497191  Val Loss: 1.373859 | Train IoU: nan  Val IoU: 0.532134
+Epoch: 5 | Train Loss: 1.414682  Val Loss: 1.234696 | Train IoU: nan  Val IoU: 0.528501
+Epoch: 6 | Train Loss: 1.184461  Val Loss: 1.153937 | Train IoU: nan  Val IoU: 0.545153
+Epoch: 7 | Train Loss: 1.045189  Val Loss: 1.058428 | Train IoU: nan  Val IoU: 0.576685
+Epoch: 8 | Train Loss: 1.002391  Val Loss: 0.978824 | Train IoU: nan  Val IoU: 0.620362
+Epoch: 9 | Train Loss: 0.918619  Val Loss: 1.006137 | Train IoU: nan  Val IoU: 0.622984
+Epoch: 10 | Train Loss: 0.872414  Val Loss: 0.990441 | Train IoU: nan  Val IoU: 0.614428
+Epoch: 11 | Train Loss: 0.789813  Val Loss: 0.846292 | Train IoU: nan  Val IoU: 0.653860
+Epoch: 12 | Train Loss: 0.735303  Val Loss: 0.838585 | Train IoU: nan  Val IoU: 0.654205
+Epoch: 13 | Train Loss: 0.699196  Val Loss: 0.803908 | Train IoU: nan  Val IoU: 0.653594
+Epoch: 14 | Train Loss: 0.685323  Val Loss: 0.799843 | Train IoU: nan  Val IoU: 0.661413
+Epoch: 15 | Train Loss: 0.627844  Val Loss: 0.784407 | Train IoU: nan  Val IoU: 0.651411
+Epoch: 16 | Train Loss: 0.599670  Val Loss: 0.788522 | Train IoU: nan  Val IoU: 0.684853
+Epoch: 17 | Train Loss: 0.597804  Val Loss: 0.781295 | Train IoU: nan  Val IoU: 0.691606
+Epoch: 18 | Train Loss: 0.557440  Val Loss: 0.811308 | Train IoU: nan  Val IoU: 0.669573
+Epoch: 19 | Train Loss: 0.526854  Val Loss: 0.719632 | Train IoU: nan  Val IoU: 0.676893
+Epoch: 20 | Train Loss: 0.503877  Val Loss: 0.718843 | Train IoU: nan  Val IoU: 0.669224
+Epoch: 21 | Train Loss: 0.490250  Val Loss: 0.725025 | Train IoU: nan  Val IoU: 0.660017
+Epoch: 22 | Train Loss: 0.488083  Val Loss: 0.756937 | Train IoU: nan  Val IoU: 0.658680
+Epoch: 23 | Train Loss: 0.475857  Val Loss: 0.702435 | Train IoU: nan  Val IoU: 0.679852
+Epoch: 24 | Train Loss: 0.446072  Val Loss: 0.707064 | Train IoU: nan  Val IoU: 0.675996
+Epoch: 25 | Train Loss: 0.436050  Val Loss: 0.729080 | Train IoU: nan  Val IoU: 0.678290
+Epoch: 26 | Train Loss: 0.424659  Val Loss: 0.690945 | Train IoU: nan  Val IoU: 0.674708
+Epoch: 27 | Train Loss: 0.411679  Val Loss: 0.737340 | Train IoU: nan  Val IoU: 0.659056
+Early stopping triggered at epoch 27 (best val_iou at epoch 17: 0.691606)
+
+TEST IoU@0.5=0.6765 Prec@0.5=0.1929 Rec@0.5=0.7579
+Training finished in 11663.87 seconds | Trainable parameters: 8,776,017
+
+>>> Training of YOLOv8 ...
+Epochs: 100 | imgsz: 256
+EarlyStopping: patience=5, min_delta=n/a (Ultralytics)
+
+Epoch: 1 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 2 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 3 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 4 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 5 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 6 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 7 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 8 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 9 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 10 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 11 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 12 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 13 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 14 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 15 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 16 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 17 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 18 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 19 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 20 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 21 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 22 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 23 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 24 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 25 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 26 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 27 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 28 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 29 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 30 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 31 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 32 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 33 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 34 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 35 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 36 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 37 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 38 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 39 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 40 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 41 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 42 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 43 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 44 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 45 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 46 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 47 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 48 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 49 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 50 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 51 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 52 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 53 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 54 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 55 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 56 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 57 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 58 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 59 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 60 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 61 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 62 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 63 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 64 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 65 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 66 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 67 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 68 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 69 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 70 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 71 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 72 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+Epoch: 73 | Train Loss: 0.000000  Val Loss: 0.000000 | Train IoU: nan  Val IoU: nan
+
+TEST IoU@0.5=0.5063 Prec@0.5=0.5278 Rec@0.5=0.3078
+Training finished in 16962.79 seconds | Trainable parameters: 2,685,343
+
+>>> Training of DETR ...
+Epochs: 200 | LR: 0.0001 | Optimizer: AdamW | Weight Decay: 0.0001
+EarlyStopping: patience=10, min_delta=0.0001
+
+Epoch: 1 | Train Loss: 12.354981  Val Loss: 7.798952 | Train IoU: nan  Val IoU: 0.126646
+Epoch: 2 | Train Loss: 7.771362  Val Loss: 13.028996 | Train IoU: nan  Val IoU: 0.111065
+Epoch: 3 | Train Loss: 13.002792  Val Loss: 14.205276 | Train IoU: nan  Val IoU: 0.221535
+Epoch: 4 | Train Loss: 13.581434  Val Loss: 8.308613 | Train IoU: nan  Val IoU: 0.192813
+Epoch: 5 | Train Loss: 17.115102  Val Loss: 11.240394 | Train IoU: nan  Val IoU: 0.180259
+Epoch: 6 | Train Loss: 15.856038  Val Loss: 21.410742 | Train IoU: nan  Val IoU: 0.208820
+Epoch: 7 | Train Loss: 16.468711  Val Loss: 17.971446 | Train IoU: nan  Val IoU: 0.240560
+Epoch: 8 | Train Loss: 16.424454  Val Loss: 14.463542 | Train IoU: nan  Val IoU: 0.216375
+Epoch: 9 | Train Loss: 17.349835  Val Loss: 14.040924 | Train IoU: nan  Val IoU: 0.244858
+Epoch: 10 | Train Loss: 17.791858  Val Loss: 7.358419 | Train IoU: nan  Val IoU: 0.147866
+Epoch: 11 | Train Loss: 16.148059  Val Loss: 9.462290 | Train IoU: nan  Val IoU: 0.166105
+Epoch: 12 | Train Loss: 16.941883  Val Loss: 16.124628 | Train IoU: nan  Val IoU: 0.204066
+Epoch: 13 | Train Loss: 17.212916  Val Loss: 16.406616 | Train IoU: nan  Val IoU: 0.234672
+Epoch: 14 | Train Loss: 17.752922  Val Loss: 16.069496 | Train IoU: nan  Val IoU: 0.272510
+Epoch: 15 | Train Loss: 16.707659  Val Loss: 20.538996 | Train IoU: nan  Val IoU: 0.213480
+Epoch: 16 | Train Loss: 16.890304  Val Loss: 13.890595 | Train IoU: nan  Val IoU: 0.252699
+Epoch: 17 | Train Loss: 17.346659  Val Loss: 17.687096 | Train IoU: nan  Val IoU: 0.312753
+Epoch: 18 | Train Loss: 16.941491  Val Loss: 14.722012 | Train IoU: nan  Val IoU: 0.261809
+Epoch: 19 | Train Loss: 18.231388  Val Loss: 18.709920 | Train IoU: nan  Val IoU: 0.254622
+Epoch: 20 | Train Loss: 17.291378  Val Loss: 12.377882 | Train IoU: nan  Val IoU: 0.052663
+Epoch: 21 | Train Loss: 15.124035  Val Loss: 12.741363 | Train IoU: nan  Val IoU: 0.229764
+Epoch: 22 | Train Loss: 16.180786  Val Loss: 15.023328 | Train IoU: nan  Val IoU: 0.115744
+Epoch: 23 | Train Loss: 15.991566  Val Loss: 18.145961 | Train IoU: nan  Val IoU: 0.267380
+Epoch: 24 | Train Loss: 16.584089  Val Loss: 18.408260 | Train IoU: nan  Val IoU: 0.255503
+Epoch: 25 | Train Loss: 17.664317  Val Loss: 16.262942 | Train IoU: nan  Val IoU: 0.292181
+Epoch: 26 | Train Loss: 17.723502  Val Loss: 17.490719 | Train IoU: nan  Val IoU: 0.301171
+Epoch: 27 | Train Loss: 16.853884  Val Loss: 19.800256 | Train IoU: nan  Val IoU: 0.279991
+Early stopping triggered at epoch 27 (best val_iou at epoch 17: 0.312753)
+
+TEST IoU@0.5=0.2422 Prec@0.5=0.0172 Rec@0.5=0.1130
+Training finished in 1476.79 seconds | Trainable parameters: 18,047,754

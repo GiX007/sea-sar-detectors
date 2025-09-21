@@ -1,0 +1,255 @@
+=== Dataset EDA Report ===
+Root data dir: C:\Users\giorg\PycharmProjects\sea-sar-detectors\data
+
+>>> Folder structure:
+[DIR]  annotations
+    - instances_train.json
+    - instances_val.json
+[DIR]  images
+    - test
+    - train
+    - val
+
+>>> File counts in C:\Users\giorg\PycharmProjects\sea-sar-detectors\data\images\train:
+  .jpg: 8930
+
+>>> Image summary in C:\Users\giorg\PycharmProjects\sea-sar-detectors\data\images\train:
+  Total images: 8930
+  Dtype distribution:
+    uint8: 8930
+  Shape distribution:
+    2160x3840x3: 5800
+    1080x1920x3: 1576
+    3632x5456x3: 860
+    5456x3632x3: 282
+    933x1230x3: 126
+    933x1231x3: 104
+    934x1231x3: 71
+    934x1230x3: 41
+    932x1230x3: 25
+    934x1232x3: 14
+    932x1231x3: 6
+    934x1229x3: 6
+    932x1229x3: 4
+    933x1232x3: 3
+    935x1230x3: 2
+    933x1229x3: 2
+    935x1232x3: 1
+    933x1228x3: 1
+    934x1228x3: 1
+    935x1233x3: 1
+    931x1227x3: 1
+    926x1225x3: 1
+    935x1229x3: 1
+    933x1233x3: 1
+
+>>> File counts in C:\Users\giorg\PycharmProjects\sea-sar-detectors\data\images\val:
+  .jpg: 1547
+
+>>> Image summary in C:\Users\giorg\PycharmProjects\sea-sar-detectors\data\images\val:
+  Total images: 1547
+  Dtype distribution:
+    uint8: 1547
+  Shape distribution:
+    2160x3840x3: 1030
+    1080x1920x3: 258
+    3632x5456x3: 149
+    5456x3632x3: 47
+    933x1231x3: 20
+    934x1231x3: 20
+    933x1230x3: 13
+    932x1230x3: 3
+    934x1232x3: 2
+    932x1231x3: 1
+    932x1229x3: 1
+    934x1230x3: 1
+    933x1229x3: 1
+    934x1229x3: 1
+
+>>> File counts in C:\Users\giorg\PycharmProjects\sea-sar-detectors\data\images\test:
+  .jpg: 3750
+
+>>> Image summary in C:\Users\giorg\PycharmProjects\sea-sar-detectors\data\images\test:
+  Total images: 3750
+  Dtype distribution:
+    uint8: 3750
+  Shape distribution:
+    2160x3840x3: 2111
+    1080x1920x3: 791
+    3632x5456x3: 476
+    5456x3632x3: 142
+    933x1231x3: 77
+    933x1230x3: 61
+    934x1231x3: 34
+    932x1230x3: 27
+    934x1230x3: 9
+    934x1232x3: 8
+    933x1232x3: 6
+    935x1233x3: 2
+    935x1231x3: 1
+    935x1232x3: 1
+    935x1234x3: 1
+    934x1229x3: 1
+    932x1231x3: 1
+    933x1229x3: 1
+
+>>> Exploring JSON: C:\Users\giorg\PycharmProjects\sea-sar-detectors\data\annotations\instances_train.json
+  Top-level keys: info, licenses, categories, images, annotations
+  info: dict with 6 keys
+    keys: year, version, description, contributor, url, date_created
+  licenses: list of length 1
+    first item: {'id': 1, 'url': '', 'name': 'Unknown'}
+  categories: list of length 6
+    Classes (id → name):
+      0: ignored
+      1: swimmer
+      2: boat
+      3: jetski
+      4: life_saving_appliances
+      5: buoy
+    first item: {'supercategory': 'ignored', 'id': 0, 'name': 'ignored'}
+  images: list of length 8930
+    first item: {'id': 3388, 'file_name': '3388.jpg', 'height': 2160, 'width': 3840, 'source': {'drone': 'mavic', 'folder_name': 'DJI_0032', 'video': 'DJI_0032.MP4', 'frame_no': 0}, 'date_time': '2020-08-25T14:16:21'
+  annotations: list of length 57760
+    first item: {'id': 14579, 'image_id': 3388, 'bbox': [3619, 1409, 75, 38], 'area': 2850, 'category_id': 2}
+
+>>> Exploring JSON: C:\Users\giorg\PycharmProjects\sea-sar-detectors\data\annotations\instances_val.json
+  Top-level keys: info, licenses, categories, images, annotations
+  info: dict with 6 keys
+    keys: year, version, description, contributor, url, date_created
+  licenses: list of length 1
+    first item: {'id': 1, 'url': '', 'name': 'Unknown'}
+  categories: list of length 6
+    Classes (id → name):
+      0: ignored
+      1: swimmer
+      2: boat
+      3: jetski
+      4: life_saving_appliances
+      5: buoy
+    first item: {'supercategory': 'ignored', 'id': 0, 'name': 'ignored'}
+  images: list of length 1547
+    first item: {'id': 3464, 'file_name': '3464.jpg', 'height': 2160, 'width': 3840, 'source': {'drone': 'mavic', 'folder_name': 'DJI_0032', 'video': 'DJI_0032.MP4', 'frame_no': 5415}, 'date_time': '2020-08-25T14:19:
+  annotations: list of length 9630
+    first item: {'id': 14808, 'image_id': 3464, 'bbox': [1698, 1619, 230, 164], 'area': 37720, 'category_id': 1}
+
+>>> Random train sample:
+  Image name: 6309.jpg
+  Image path: C:\Users\giorg\PycharmProjects\sea-sar-detectors\data\images\train\6309.jpg
+  Dtype: uint8
+  Shape: (2160, 3840, 3)
+  Image:
+ [[[128 154 177]
+  [128 154 177]
+  [128 154 177]
+  ...
+  [132 155 169]
+  [133 156 170]
+  [133 156 170]]
+
+ [[126 152 175]
+  [126 152 175]
+  [126 152 175]
+  ...
+  [128 151 165]
+  [130 153 167]
+  [131 154 168]]
+
+ [[125 151 174]
+  [125 151 174]
+  [124 150 173]
+  ...
+  [124 147 161]
+  [127 150 164]
+  [128 151 165]]
+
+ ...
+
+ [[108 124  79]
+  [107 123  78]
+  [106 122  77]
+  ...
+  [ 93 114  83]
+  [ 93 113  85]
+  [ 92 112  84]]
+
+ [[105 121  76]
+  [105 121  76]
+  [105 121  76]
+  ...
+  [ 94 115  84]
+  [ 94 114  86]
+  [ 93 113  85]]
+
+ [[103 119  74]
+  [103 119  74]
+  [105 121  76]
+  ...
+  [ 95 116  85]
+  [ 94 114  86]
+  [ 94 114  86]]]
+  Metadata   : {'id': 6309, 'file_name': '6309.jpg', 'height': 2160, 'width': 3840, 'source': {'drone': 'mavic', 'folder_name': 'NorthSea_Fri_DJI_0114', 'video': 'NorthSea_Fri_DJI_0114.MP4', 'frame_no': 435}, 'date_time': '2021-08-20T15:15:06.481133', 'meta': {'image_name': 'DJI_0114.MP4_image575.png', 'datetime(utc)': '2021-08-20 13:15:06', 'latitude': 53.7207856612566, 'longitude': 7.162768720991241, 'height_above_takeoff(meter)': 48.59762999085645, 'speed(m/s)': 2.0099460885113993, 'xspeed(m/s)': -1.9999463567277604, 'yspeed(m/s)': -0.19999463567277603, 'zspeed(m/s)': 0.0, 'compass_heading(degrees)': 6.7, 'gimbal_heading(degrees)': 11.3, 'gimbal_pitch(degrees)': 33.8}}
+  Annotations: [{'id': 33812, 'image_id': 6309, 'bbox': [2568, 1184, 138, 179], 'area': 24702, 'category_id': 2}, {'id': 33813, 'image_id': 6309, 'bbox': [1798, 1220, 26, 26], 'area': 676, 'category_id': 1}, {'id': 33814, 'image_id': 6309, 'bbox': [1933, 1289, 24, 30], 'area': 720, 'category_id': 1}, {'id': 33815, 'image_id': 6309, 'bbox': [1636, 1431, 48, 37], 'area': 1776, 'category_id': 1}, {'id': 33816, 'image_id': 6309, 'bbox': [1542, 1424, 64, 43], 'area': 2752, 'category_id': 1}, {'id': 33817, 'image_id': 6309, 'bbox': [1410, 1413, 73, 36], 'area': 2628, 'category_id': 1}, {'id': 33818, 'image_id': 6309, 'bbox': [1067, 1430, 64, 79], 'area': 5056, 'category_id': 5}, {'id': 33819, 'image_id': 6309, 'bbox': [1761, 1451, 23, 32], 'area': 736, 'category_id': 1}], total=8
+
+=== Resplit ===
+Original ratios (by images): train=0.6277, val=0.1087, test=0.2636
+Annotated pool: 10477
+New split sizes -> train=6576, val=1139, test=2762
+Output under: data\resplit
+Classes (5) -> ['swimmer', 'boat', 'jetski', 'life_saving_appliances', 'buoy']
+
+[Resplit][train] class distribution:
+  swimmer: 27088
+  boat: 9580
+  buoy: 3066
+  jetski: 1655
+  life_saving_appliances: 778
+
+[Resplit][val] class distribution:
+  swimmer: 4678
+  boat: 1673
+  buoy: 544
+  jetski: 299
+  life_saving_appliances: 141
+
+[Resplit][test] class distribution:
+  swimmer: 11536
+  boat: 3983
+  buoy: 1339
+  jetski: 696
+  life_saving_appliances: 334
+
+=== Dataloaders ===
+train: 658 samples, 165 batches
+val: 114 samples, 29 batches
+test: 690 samples, 173 batches
+
+Inspecting train dataloader
+  X shape: (3, 192, 192)
+  y keys: ['boxes', 'labels', 'image_id']
+  y['boxes'] shape : (8, 4)
+  y['labels'] shape: (8,)
+  y['image_id'] shape: (1,)
+  First example of X value (patch [:, :2, :5]): tensor([[[0.4980, 0.5333, 0.5373, 0.5137, 0.5059],
+         [0.4902, 0.5020, 0.5373, 0.5294, 0.5098]],
+
+        [[0.5020, 0.5412, 0.5412, 0.5176, 0.5020],
+         [0.4941, 0.5059, 0.5412, 0.5294, 0.5098]],
+
+        [[0.4706, 0.5255, 0.5333, 0.5098, 0.4941],
+         [0.4745, 0.4863, 0.5255, 0.5255, 0.4980]]])
+  X min/max: (0.000, 0.965)
+  boxes count: 8 | labels count: 8
+  First example's boxes: tensor([[  0.0000,  46.7556,   3.1500,  51.9111],
+        [ 89.2500, 100.8889,  90.8000, 104.6222],
+        [140.5000, 126.4000, 150.5000, 144.8000],
+        [138.7000, 132.9778, 146.0500, 145.7778],
+        [124.2000,   0.0000, 132.3000,  17.5111],
+        [111.4500,  50.5778, 113.3000,  53.9556],
+        [119.5000,  38.4000, 121.6000,  42.5778],
+        [ 99.9000,  78.6667, 101.5500,  80.8000]])
+  First example's labels: tensor([2, 1, 2, 3, 2, 1, 1, 1])
+  First batch X len: 4
+  First batch y len: 4
+  Tensor dtypes -> X: torch.float32 | y['boxes']: torch.float32 | y['labels']: torch.int64 | y['image_id']: torch.int64
+
