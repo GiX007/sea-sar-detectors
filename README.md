@@ -1,6 +1,6 @@
 # Sea-SAR Detectors
 
-This project implements and compares different object detection models (Custom CNN, YOLO, Faster R-CNN, Transformer) on the [SeaDronesSee Object Detection v2 (Compressed)](https://seadronessee.cs.uni-tuebingen.de/dataset) dataset. The goal is to evaluate performance on small-object maritime detection in 4K aerial imagery, with relevance to search-and-rescue and maritime surveillance.
+This project implements and compares different object detection models (YOLO, Faster R-CNN, Transformer) on the [SeaDronesSee Object Detection v2 (Compressed)](https://seadronessee.cs.uni-tuebingen.de/dataset) dataset. The goal is to evaluate state-of-the-art detectors on small-object maritime detection in 4K aerial imagery, with relevance to search-and-rescue and maritime surveillance.
 
 ## Contents
 
